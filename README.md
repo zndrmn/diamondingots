@@ -1,9 +1,12 @@
-# Fabric Example Mod
+<div>
+<h3 align="center">Diamond Ingots</h3>
 
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+  <p align="center">
+    A unique way to make diamonds harder to obtain!
+    <br />
+    <br />
+    <a href="https://github.com/zndrmn/diamondingots/issues"><strong>Report Issue</strong></a>
+    <strong>·</strong>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/diamond-ingots"><strong>CurseForge Project Page »</strong></a>
+  </p>
+</div>
