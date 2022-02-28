@@ -7,6 +7,7 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.zndrmn.diamondingots.DiamondIngots;
@@ -15,6 +16,11 @@ public class Blocks {
 
     public static final Block DIAMOND_ORE = registerBlock("diamond_ore",
             new Block(FabricBlockSettings.of(Material.STONE).hardness(3).resistance(3).requiresTool()), ItemGroup.MISC);
+
+    public static final Block DEEPSLATE_DIAMOND_ORE = registerBlock("deepslate_diamond_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).hardness(4.5f).resistance(3).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)), ItemGroup.MISC);
+
+
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

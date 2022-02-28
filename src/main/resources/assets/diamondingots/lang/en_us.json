@@ -1,5 +1,7 @@
 {
   "item.diamondingots.diamond_ingot": "Diamond Ingot",
   "item.diamondingots.diamond_shard": "Diamond Shard",
+
+  "block.diamondingots.deepslate_diamond_ore": "Deepslate Diamond Ore",
   "block.diamondingots.diamond_ore": "Diamond Ore"
 }
