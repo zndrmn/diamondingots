@@ -1,6 +1,7 @@
 package net.zndrmn.diamondingots;
 
 import net.fabricmc.api.ModInitializer;
+import net.zndrmn.diamondingots.block.Blocks;
 import net.zndrmn.diamondingots.item.Items;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +20,7 @@ public class DiamondIngots implements ModInitializer {
 		// Proceed with mild caution.
 
 		Items.registerItems();
+		Blocks.registerBlocks();
 
 	}
 }
