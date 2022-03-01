@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "diamondingots:diamond_shard"
+  },
+  "addition": {
+    "item": "diamondingots:diamond_shard"
+  },
+  "result": {
+    "item": "diamondingots:diamond_ingot"
+  }
+}
