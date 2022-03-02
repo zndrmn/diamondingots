@@ -10,8 +10,6 @@
           "children": [
             {
               "type": "minecraft:item",
-              "weight": 4,
-              "quality": 2,
               "name": "minecraft:deepslate_diamond_ore",
               "conditions": [
                 {
@@ -38,7 +36,7 @@
                   "count": {
                     "type": "minecraft:uniform",
                     "min": 0,
-                    "max": 5
+                    "max": 4
                   },
                   "add": false
                 },
