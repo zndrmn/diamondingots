@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Diamond Ingots",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "A unique way to make diamonds harder to obtain!",
   "authors": [
     "zndrmn"
   ],
@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.zndrmn.diamondingots.DiamondIngots"
+    ],
+    "tweed4:config": [
+      "net.zndrmn.diamondingots.Config"
     ]
   },
   "mixins": [
