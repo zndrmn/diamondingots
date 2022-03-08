@@ -19,7 +19,6 @@ public class DiamondIngots implements ModInitializer {
 		// Proceed with mild caution.
 
 		Items.registerItems();
-		System.out.println("Hello Fabric World!");
 
 	}
 }
