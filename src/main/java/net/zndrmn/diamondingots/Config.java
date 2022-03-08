@@ -12,7 +12,7 @@ import de.siphalor.tweed4.config.constraints.RangeConstraint;
 @ATweedConfig(environment = ConfigEnvironment.UNIVERSAL, scope = ConfigScope.DEFAULT, tailors = "tweed4:coat", casing = CaseFormat.LOWER_HYPHEN)
 @AConfigBackground("textures/block/diamond_block.png")
 public class Config {
-    @AConfigEntry(comment = "General configuration")
+    @AConfigEntry(comment = "General configuration\n-------------------------------------------\nConfigs do nothing because I don't know how\n      to have it read / write to the       \n       diamond_ore.json loot-table         \n      (Im fairly new to Java coding)       \n\n You can make a pull request if you have   \n        a solution to my problem           \n https://github.com/zndrmn/diamondingots   \n-------------------------------------------")
     public static diamondore diamondOre = new diamondore();
 
     @AConfigBackground("textures/block/acacia_log.png")
