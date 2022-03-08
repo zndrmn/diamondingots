@@ -6,7 +6,6 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.zndrmn.diamondingots.DiamondIngots;
-import org.lwjgl.system.CallbackI;
 
 public class Items {
 
@@ -24,7 +23,7 @@ public class Items {
 
     public static void registerItems() {
 
-        DiamondIngots.LOGGER.info("Registering items for " + DiamondIngots.MOD_ID);
+        DiamondIngots.LOGGER.info("Registering " + DiamondIngots.MOD_ID);
 
     }
 

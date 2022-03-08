@@ -1,3 +1,4 @@
+/*
 package net.zndrmn.diamondingots;
 
 import com.google.common.base.CaseFormat;
@@ -43,3 +44,4 @@ public class Config {
         public int maxDiamondShards = 4;
     }
 }
+*/

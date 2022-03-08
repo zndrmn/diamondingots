@@ -11,10 +11,10 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
-	maven { url "https://maven.siphalor.de" }
-	maven { url "https://maven.shedaniel.me" }
-	maven { url "https://maven.terraformersmc.com/releases" }
-	maven { url "https://jitpack.io" }
+	//maven { url "https://maven.siphalor.de" }
+	//maven { url "https://maven.shedaniel.me" }
+	//maven { url "https://maven.terraformersmc.com/releases" }
+	//maven { url "https://jitpack.io" }
 }
 
 dependencies {
@@ -25,6 +25,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Libraries : versions can be changed in gradle.properties
+	/*
 	include(modApi("de.siphalor.tweed4:tweed4-base-$project.minecraft_major_version:1.4.1+"))
 	include(modApi("de.siphalor.tweed4:tweed4-annotated-$project.minecraft_major_version:1.3.0+"))
 	include(modApi("de.siphalor.tweed4:tweed4-data-$project.minecraft_major_version:1.2.1+"))
@@ -36,7 +37,9 @@ dependencies {
 	modImplementation(include("de.siphalor:amecsapi-$minecraft_major_version:${project.amecs_version}")) {
 		exclude group: "net.fabricmc.fabric-api"
 	}
+	*/
 }
+
 
 processResources {
 	inputs.property "version", project.version
