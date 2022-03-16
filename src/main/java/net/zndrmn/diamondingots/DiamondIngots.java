@@ -1,7 +1,7 @@
 package net.zndrmn.diamondingots;
 
 import net.fabricmc.api.ModInitializer;
-import net.zndrmn.diamondingots.item.Items;
+import net.zndrmn.diamondingots.registry.Items;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
