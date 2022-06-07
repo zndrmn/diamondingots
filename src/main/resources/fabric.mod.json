@@ -20,16 +20,13 @@
   "entrypoints": {
     "main": [
       "net.zndrmn.diamondingots.DiamondIngots"
-    ],
-    "tweed4:config": [
-      "net.zndrmn.diamondingots.Config"
     ]
   },
 
   "depends": {
-    "fabricloader": ">=0.12.12",
+    "fabricloader": ">=0.14.6",
     "fabric": "*",
-    "minecraft": "1.18.x",
+    "minecraft": "~1.19",
     "java": ">=17"
   },
   "suggests": {
