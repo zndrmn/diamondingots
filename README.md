@@ -1,22 +1,32 @@
-<div>
-<h3 align="center">Diamond Ingots</h3>
+<hr>
 
-  <p align="center">
-    A unique way to make diamonds harder to obtain!
-    <br />
-    <br />
-    <a href="https://github.com/zndrmn/diamondingots/issues"><strong>Report Issue</strong></a>
-    <strong>·</strong>
-    <a href="https://www.curseforge.com/minecraft/mc-mods/diamond-ingots"><strong>CurseForge Project Page »</strong></a>
-  </p>
-</div>
-<div>
+### Diamond Ingots
+**The harder way to obtain diamonds!**
 
-### Features
+<hr>
 
-- [x] **IN DEVELOPMENT**
-- [x] Diamond ores now will drop [ 0 - 3 ] shards!
-- [x] To craft a **_diamond ingot_** you will need combine 2 shards together inside a smithing table!
-- [x] **_Vanilla diamonds_** can still be obtained by finding them in chests or smelting a diamond ingot inside a furnace!
-- [x] Most of the vanilla recipes use the new **_diamond types!_**
-</div>
+`> Features`
+
+> **Instead of diamond ore breaking into regular diamonds, they now break into shards!**
+<br>
+> **└** *because duh, diamonds are brittle* . . .
+
+> **Most vanilla recipes use the new diamond types!**
+
+> **Drop rates for diamond shards**
+<br>
+> **└** *minecraft:diamond_ore drops* **:** 0 **/** 3
+<br>
+> **└** *minecraft:deepslate_diamond_ore drops* **:** 0 **/** 4
+
+> **The vanilla diamonds can still be obtained by smelting diamond ingots inside a furnace**.
+
+`> Q / A`
+> **Does diamond ingots have support for** [ **x** ] **mod**_?_
+<br>
+> **└** *probably not, So please request for it to become supported on [GitHub](https://github.com/zndrmn/diamondingots/issues)****!***
+
+`> Supported Mods`
+> **ExtraSounds**
+
+###### My mods will only be hosted on [Modrinth](https://modrinth.com/mod/diamond-ingots) & [CurseForge](https://www.curseforge.com/minecraft/mc-mods/diamond-ingots)!
