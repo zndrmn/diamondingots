@@ -19,7 +19,7 @@ public class Items {
     }
 
     public static void registerItems() {
-        DiamondIngots.LOGGER.info("Registering " + DiamondIngots.MOD_ID);
+        DiamondIngots.LOGGER.info("Registering dffddfdfdffddffdfddddddddddddddddddd" + DiamondIngots.MOD_ID);
     }
 
 }
