@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "diamondingots:diamond_ingot"
-  },
-  "result": "minecraft:diamond",
-  "experience": 0.35,
-  "cookingtime": 200
-}
