@@ -1,0 +1,22 @@
+{
+  "item.click.diamondingots.diamond_ingot": {
+    "sounds": [
+      {
+        "name": "extrasounds:item.category.metal",
+        "pitch": 1.0,
+        "type": "event"
+      }
+    ],
+    "replace": true
+  },
+  "item.click.diamondingots.diamond_shard": {
+    "sounds": [
+      {
+        "name": "extrasounds:item.category.metal",
+        "pitch": 0.6,
+        "type": "event"
+      }
+    ],
+    "replace": true
+  }
+}
