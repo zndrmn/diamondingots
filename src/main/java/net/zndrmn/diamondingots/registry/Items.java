@@ -1,4 +1,4 @@
-package net.zndrmn.diamondingots.item;
+package net.zndrmn.diamondingots.registry;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -8,7 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.zndrmn.diamondingots.DiamondIngots;
 
-public class ModItems {
+public class Items {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, DiamondIngots.MOD_ID);
 
