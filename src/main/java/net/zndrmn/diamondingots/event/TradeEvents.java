@@ -14,7 +14,7 @@ import net.zndrmn.diamondingots.DiamondIngots;
 import java.util.List;
 
 @Mod.EventBusSubscriber(modid = DiamondIngots.MOD_ID)
-public class ModEvents {
+public class TradeEvents {
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event) {
         if (event.getType() == VillagerProfession.ARMORER) {
