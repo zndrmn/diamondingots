@@ -13,10 +13,10 @@ public class Items {
     public static final Item DIAMOND_SHARD = registerItem("diamond_shard", new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
     private static Item registerItem(String name, Item item) {
-        // Diamond Ingots
-        // Item Registry
         return Registry.register(Registry.ITEM, new Identifier(DiamondIngots.MOD_ID, name), item);
     }
+
+
 
     public static void registerItems() {
         DiamondIngots.LOGGER.info("Registering " + DiamondIngots.MOD_ID);
