@@ -16,10 +16,7 @@ public class Items {
         return Registry.register(Registry.ITEM, new Identifier(DiamondIngots.MOD_ID, name), item);
     }
 
-
-
     public static void registerItems() {
-        DiamondIngots.LOGGER.info("Registering " + DiamondIngots.MOD_ID);
-    }
 
+    }
 }

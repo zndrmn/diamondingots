@@ -12,9 +12,8 @@ public class DiamondIngots implements ModInitializer {
 	public static final String MOD_ID = "diamondingots";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+	public static final int CONFIG_VERSION = 1;
 	public static final ConfigBuilder CONFIG = ConfigBuilder.createAndLoad();
-
-
 
 	@Override
 	public void onInitialize() {
@@ -22,5 +21,8 @@ public class DiamondIngots implements ModInitializer {
 		Items.registerItems();
 		ConfigLootTables.modifyLootTables();
 
+		if (CONFIG.config_version() < CONFIG_VERSION) {
+			LOGGER.error("The config version is outdated! Please delete or change the config version.");
+		}
 	}
 }
