@@ -1,4 +1,17 @@
 {
   "item.diamondingots.diamond_ingot": "Diamond Ingot",
-  "item.diamondingots.diamond_shard": "Diamond Shard"
+  "item.diamondingots.diamond_shard": "Diamond Shard",
+
+  "text.config.diamondingots.category.diamond_ore": "\"diamond_ore\" Category",
+  "text.config.diamondingots.category.deepslate_diamond_ore": "\"deepslate_diamond_ore\" Category",
+
+  "text.config.diamondingots.title": "Diamond Ingots Config",
+
+  "text.config.diamondingots.option.diamond_ore.rndPercentage": "Random Drop Percentage",
+  "text.config.diamondingots.option.diamond_ore.minStackSize": "Minimum Stack Size",
+  "text.config.diamondingots.option.diamond_ore.maxStackSize": "Maximum Stack Size",
+
+  "text.config.diamondingots.option.deepslate_diamond_ore.rndPercentage": "Random Drop Percentage",
+  "text.config.diamondingots.option.deepslate_diamond_ore.minStackSize": "Minimum Stack Size",
+  "text.config.diamondingots.option.deepslate_diamond_ore.maxStackSize": "Maximum Stack Size"
 }
