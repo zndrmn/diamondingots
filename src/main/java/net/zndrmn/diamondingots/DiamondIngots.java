@@ -3,6 +3,7 @@ package net.zndrmn.diamondingots;
 import net.fabricmc.api.ModInitializer;
 import net.zndrmn.diamondingots.config.ConfigBuilder;
 import net.zndrmn.diamondingots.config.ConfigLootTables;
+import net.zndrmn.diamondingots.registry.Events;
 import net.zndrmn.diamondingots.registry.Items;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +20,7 @@ public class DiamondIngots implements ModInitializer {
 	public void onInitialize() {
 
 		Items.registerItems();
+		Events.registerEvents();
 		ConfigLootTables.modifyLootTables();
 
 		if (CONFIG.config_version() < CONFIG_VERSION) {

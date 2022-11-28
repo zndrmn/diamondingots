@@ -13,7 +13,7 @@ import net.zndrmn.diamondingots.registry.Items;
 
 public class ConfigLootTables {
 
-    /*  Vanilla Loot-Tables
+    /*  Minecraft Loot-Tables
         This class is used for modifying "minecraft" loot-tables
 
         Block Loot Tables
@@ -24,13 +24,14 @@ public class ConfigLootTables {
 
         Village Loot Tables
         minecraft loot_tables/chests/village/
+
+        Gameplay Loot Tables
+        minecraft loot_tables/gameplay/
      */
 
-    // Block Loot Tables
     private static final Identifier DIAMOND_ORE = new Identifier("minecraft", "blocks/diamond_ore");
     private static final Identifier DEEPSLATE_DIAMOND_ORE = new Identifier("minecraft", "blocks/deepslate_diamond_ore");
 
-    // Chest Loot Tables
     private static final Identifier ABANDONED_MINESHAFT = new Identifier("minecraft", "chests/abandoned_mineshaft");
     private static final Identifier BASTION_TREASURE = new Identifier("minecraft", "chests/bastion_treasure");
     private static final Identifier BURIED_TREASURE = new Identifier("minecraft", "chests/buried_treasure");
@@ -41,13 +42,14 @@ public class ConfigLootTables {
     private static final Identifier SHIPWRECK_TREASURE = new Identifier("minecraft", "chests/shipwreck_treasure");
     private static final Identifier STRONGHOLD_CORRIDOR = new Identifier("minecraft", "chests/stronghold_corridor");
 
-    // Village Loot Tables
     private static final Identifier VILLAGE_TOOLSMITH = new Identifier("minecraft", "chests/village/village_toolsmith");
     private static final Identifier VILLAGE_WEAPONSMITH = new Identifier("minecraft", "chests/village/village_weaponsmith");
 
+    private static final Identifier CAT_MORNING_GIFT = new Identifier("minecraft", "gameplay/cat_morning_gift");
+
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-              /* Block Loot Tables */
+
             if (DIAMOND_ORE.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
@@ -63,7 +65,10 @@ public class ConfigLootTables {
                         .with(ItemEntry.builder(Items.DIAMOND_SHARD))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(DiamondIngots.CONFIG.deepslate_diamond_ore.minStackSize(), DiamondIngots.CONFIG.deepslate_diamond_ore.maxStackSize())).build());
                 tableBuilder.pool(poolBuilder.build());
-            } /* Chest Loot Tables */
+            }
+
+
+
             if (ABANDONED_MINESHAFT.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
@@ -189,7 +194,7 @@ public class ConfigLootTables {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.14f))
                         .with(ItemEntry.builder(Items.DIAMOND_INGOT))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1,1)).build());
+                        .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                 tableBuilder.pool(poolBuilder.build());
             }
             if (STRONGHOLD_CORRIDOR.equals(id)) {
@@ -207,7 +212,10 @@ public class ConfigLootTables {
                         .with(ItemEntry.builder(Items.DIAMOND_INGOT))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1,3)).build());
                 tableBuilder.pool(poolBuilder.build());
-            } /* Villager chest Loot Tables */
+            }
+
+
+
             if (VILLAGE_TOOLSMITH.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
@@ -238,6 +246,17 @@ public class ConfigLootTables {
                         .conditionally(RandomChanceLootCondition.builder(0.10f))
                         .with(ItemEntry.builder(Items.DIAMOND_INGOT))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1,3)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+
+
+            if (CAT_MORNING_GIFT.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.01f))
+                        .with(ItemEntry.builder(Items.DIAMOND_SHARD))
+                        .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                 tableBuilder.pool(poolBuilder.build());
             }
         });
