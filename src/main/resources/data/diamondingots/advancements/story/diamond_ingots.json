@@ -1,0 +1,37 @@
+{
+  "parent": "diamondingots:story/diamond_shards",
+  "criteria": {
+    "diamond_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "diamondingots:diamond_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.story.diamondingots.diamond_ingots.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "diamondingots:diamond_ingot"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.story.diamondingots.diamond_ingots.title"
+    }
+  },
+  "requirements": [
+    [
+      "diamond_ingot"
+    ]
+  ]
+}

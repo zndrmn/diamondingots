@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:story/iron_tools",
+  "criteria": {
+    "diamond_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "diamondingots:diamond_shard"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.story.diamondingots.diamond_shards.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "diamondingots:diamond_shard"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.story.diamondingots.diamond_shards.title"
+    }
+  },
+  "requirements": [
+    [
+      "diamond_shard"
+    ]
+  ]
+}

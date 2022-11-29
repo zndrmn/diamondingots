@@ -1,9 +1,14 @@
 {
+  "advancements.story.diamondingots.diamond_shards.description": "Acquire diamond shards",
+  "advancements.story.diamondingots.diamond_shards.title": "Diamond shards!",
+  "advancements.story.diamondingots.diamond_ingots.description": "Acquire diamond ingots",
+  "advancements.story.diamondingots.diamond_ingots.title": "Diamond ingots!",
+
   "item.diamondingots.diamond_ingot": "Diamond Ingot",
   "item.diamondingots.diamond_shard": "Diamond Shard",
 
-  "text.config.diamondingots.category.diamond_ore": "\"diamond_ore\" Category",
-  "text.config.diamondingots.category.deepslate_diamond_ore": "\"deepslate_diamond_ore\" Category",
+  "text.config.diamondingots.category.diamond_ore": "\"diamond_ore\" category",
+  "text.config.diamondingots.category.deepslate_diamond_ore": "\"deepslate_diamond_ore\" category",
 
   "text.config.diamondingots.title": "Diamond Ingots Config",
 
