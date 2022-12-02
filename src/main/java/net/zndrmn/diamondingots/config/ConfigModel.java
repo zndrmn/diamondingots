@@ -14,13 +14,15 @@ public class ConfigModel {
 
         @ExcludeFromScreen
         public int config_version = DiamondIngots.CONFIG_VERSION;
+        public boolean config_logger = true;
+
         @Nest
         @Comment("──────────────\ndefault values\nrnd: 0.78\nmin: 1\nmax: 3")
-        public OptionsLootTables diamond_ore = new OptionsLootTables(0.78f, 1, 3);
+        public OptionsLootTables diamond_ore = new OptionsLootTables(0.78f, 1, 3, 2);
 
         @Nest
         @Comment("──────────────\ndefault values\nrnd: 0.52\nmin: 1\nmax: 5")
-        public OptionsLootTables deepslate_diamond_ore = new OptionsLootTables(0.52f, 1, 5);
+        public OptionsLootTables deepslate_diamond_ore = new OptionsLootTables(0.52f, 1, 5, 2);
 
 
 }

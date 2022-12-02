@@ -17,10 +17,15 @@ public class OptionsLootTables {
     @RestartRequired
     public int maxStackSize;
 
-    public OptionsLootTables(float rndPercentage, int minStackSize, int maxStackSize) {
+    @RangeConstraint(min = 0, max = 8)
+    @RestartRequired
+    public int fortuneBonus;
+
+    public OptionsLootTables(float rndPercentage, int minStackSize, int maxStackSize, int fortuneBonus) {
         this.rndPercentage = rndPercentage;
         this.minStackSize = minStackSize;
         this.maxStackSize = maxStackSize;
+        this.fortuneBonus = fortuneBonus;
 
     }
 

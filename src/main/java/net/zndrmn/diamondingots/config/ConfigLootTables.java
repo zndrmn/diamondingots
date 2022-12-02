@@ -1,15 +1,19 @@
 package net.zndrmn.diamondingots.config;
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 import net.zndrmn.diamondingots.DiamondIngots;
 import net.zndrmn.diamondingots.registry.Items;
+
+import static net.minecraft.enchantment.Enchantments.FORTUNE;
 
 public class ConfigLootTables {
 
@@ -55,7 +59,8 @@ public class ConfigLootTables {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(DiamondIngots.CONFIG.diamond_ore.rndPercentage()))
                         .with(ItemEntry.builder(Items.DIAMOND_SHARD))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(DiamondIngots.CONFIG.diamond_ore.minStackSize(), DiamondIngots.CONFIG.diamond_ore.maxStackSize())).build());
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(DiamondIngots.CONFIG.diamond_ore.minStackSize(), DiamondIngots.CONFIG.diamond_ore.maxStackSize())).build())
+                        .apply(ApplyBonusLootFunction.uniformBonusCount(FORTUNE, DiamondIngots.CONFIG.diamond_ore.fortuneBonus()));
                 tableBuilder.pool(poolBuilder.build());
             }
             if (DEEPSLATE_DIAMOND_ORE.equals(id)) {
@@ -63,7 +68,8 @@ public class ConfigLootTables {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(DiamondIngots.CONFIG.deepslate_diamond_ore.rndPercentage()))
                         .with(ItemEntry.builder(Items.DIAMOND_SHARD))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(DiamondIngots.CONFIG.deepslate_diamond_ore.minStackSize(), DiamondIngots.CONFIG.deepslate_diamond_ore.maxStackSize())).build());
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(DiamondIngots.CONFIG.deepslate_diamond_ore.minStackSize(), DiamondIngots.CONFIG.deepslate_diamond_ore.maxStackSize())).build())
+                        .apply(ApplyBonusLootFunction.uniformBonusCount(FORTUNE, DiamondIngots.CONFIG.diamond_ore.fortuneBonus()));
                 tableBuilder.pool(poolBuilder.build());
             }
 
