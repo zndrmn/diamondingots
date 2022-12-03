@@ -23,7 +23,7 @@ public class DiamondIngots implements ModInitializer {
 		Events.registerEvents();
 		ConfigLootTables.modifyLootTables();
 
-		if (CONFIG.config_version() < CONFIG_VERSION) {
+		if (CONFIG.config_version() != CONFIG_VERSION) {
 			LOGGER.error("The config version is outdated! Please delete or change the config version.");
 		}
 	}

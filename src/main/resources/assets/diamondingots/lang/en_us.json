@@ -15,8 +15,9 @@
   "text.config.diamondingots.option.diamond_ore.rndPercentage": "Random Drop Percentage",
   "text.config.diamondingots.option.diamond_ore.minStackSize": "Minimum Stack Size",
   "text.config.diamondingots.option.diamond_ore.maxStackSize": "Maximum Stack Size",
-
+  "text.config.diamondingots.option.diamond_ore.fortuneBonus": "Fortune Multiplier",
   "text.config.diamondingots.option.deepslate_diamond_ore.rndPercentage": "Random Drop Percentage",
   "text.config.diamondingots.option.deepslate_diamond_ore.minStackSize": "Minimum Stack Size",
-  "text.config.diamondingots.option.deepslate_diamond_ore.maxStackSize": "Maximum Stack Size"
+  "text.config.diamondingots.option.deepslate_diamond_ore.maxStackSize": "Maximum Stack Size",
+  "text.config.diamondingots.option.deepslate_diamond_ore.fortuneBonus": "Fortune Multiplier"
 }
