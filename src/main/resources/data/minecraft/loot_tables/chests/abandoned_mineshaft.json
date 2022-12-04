@@ -130,14 +130,14 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2.0,
+                "max": 5.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
           "name": "minecraft:diamond",
-          "weight": 3
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -153,7 +153,7 @@
             }
           ],
           "name": "diamondingots:diamond_ingot",
-          "weight": 1
+          "weight": 8
         },
         {
           "type": "minecraft:item",

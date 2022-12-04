@@ -95,14 +95,14 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 4.0,
+                "max": 5.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
           "name": "diamondingots:diamond_shard",
-          "weight": 5
+          "weight": 54
         },
         {
           "type": "minecraft:item",
@@ -134,7 +134,7 @@
             }
           ],
           "name": "diamondingots:diamond_ingot",
-          "weight": 3
+          "weight": 60
         },
         {
           "type": "minecraft:item",
