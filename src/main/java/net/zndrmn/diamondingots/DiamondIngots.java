@@ -11,8 +11,6 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.zndrmn.diamondingots.config.ClientConfig;
-import net.zndrmn.diamondingots.config.CommonConfig;
 import net.zndrmn.diamondingots.registry.Items;
 import org.slf4j.Logger;
 
@@ -28,9 +26,6 @@ public class DiamondIngots {
         Items.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
-
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ClientConfig.SPEC, "diamondingots-client.toml");
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CommonConfig.SPEC, "diamondingots-common.toml");
 
         MinecraftForge.EVENT_BUS.register(this);
     }
