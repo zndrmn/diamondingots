@@ -16,33 +16,29 @@ import static net.minecraft.enchantment.Enchantments.FORTUNE;
 
 public class ConfigLootTables {
 
-    /*  Minecraft Loot-Tables
-        This class is used for modifying "minecraft" loot-tables
-        Block Loot Tables
-        minecraft loot_tables/blocks/
-        Chest Loot Tables
-        minecraft loot_tables/chests/
-        Village Loot Tables
-        minecraft loot_tables/chests/village/
-        Gameplay Loot Tables
-        minecraft loot_tables/gameplay/
-     */
+    // [Block Loot-Tables]: minecraft loot_tables/blocks/
 
-    private static final Identifier DIAMOND_ORE = new Identifier("minecraft", "blocks/diamond_ore");
+    private static final Identifier DIAMOND_ORE           = new Identifier("minecraft", "blocks/diamond_ore");
     private static final Identifier DEEPSLATE_DIAMOND_ORE = new Identifier("minecraft", "blocks/deepslate_diamond_ore");
 
+    // [Chest Loot-Tables]: minecraft loot_tables/chests/
+
     private static final Identifier ABANDONED_MINESHAFT = new Identifier("minecraft", "chests/abandoned_mineshaft");
-    private static final Identifier BASTION_TREASURE = new Identifier("minecraft", "chests/bastion_treasure");
-    private static final Identifier BURIED_TREASURE = new Identifier("minecraft", "chests/buried_treasure");
-    private static final Identifier DESERT_PYRAMID = new Identifier("minecraft", "chests/desert_pyramid");
-    private static final Identifier END_CITY_TREASURE = new Identifier("minecraft", "chests/end_city_treasure");
-    private static final Identifier JUNGLE_TEMPLE = new Identifier("minecraft", "chests/jungle_temple");
-    private static final Identifier NETHER_BRIDGE = new Identifier("minecraft", "chests/nether_bridge");
-    private static final Identifier SHIPWRECK_TREASURE = new Identifier("minecraft", "chests/shipwreck_treasure");
+    private static final Identifier BASTION_TREASURE    = new Identifier("minecraft", "chests/bastion_treasure");
+    private static final Identifier BURIED_TREASURE     = new Identifier("minecraft", "chests/buried_treasure");
+    private static final Identifier DESERT_PYRAMID      = new Identifier("minecraft", "chests/desert_pyramid");
+    private static final Identifier END_CITY_TREASURE   = new Identifier("minecraft", "chests/end_city_treasure");
+    private static final Identifier JUNGLE_TEMPLE       = new Identifier("minecraft", "chests/jungle_temple");
+    private static final Identifier NETHER_BRIDGE       = new Identifier("minecraft", "chests/nether_bridge");
+    private static final Identifier SHIPWRECK_TREASURE  = new Identifier("minecraft", "chests/shipwreck_treasure");
     private static final Identifier STRONGHOLD_CORRIDOR = new Identifier("minecraft", "chests/stronghold_corridor");
 
-    private static final Identifier VILLAGE_TOOLSMITH = new Identifier("minecraft", "chests/village/village_toolsmith");
+    // [Village Loot-Tables]: minecraft loot_tables/chests/village/
+
+    private static final Identifier VILLAGE_TOOLSMITH   = new Identifier("minecraft", "chests/village/village_toolsmith");
     private static final Identifier VILLAGE_WEAPONSMITH = new Identifier("minecraft", "chests/village/village_weaponsmith");
+
+    // [Gameplay Loot-Tables]: minecraft loot_tables/gameplay/
 
     private static final Identifier CAT_MORNING_GIFT = new Identifier("minecraft", "gameplay/cat_morning_gift");
 
