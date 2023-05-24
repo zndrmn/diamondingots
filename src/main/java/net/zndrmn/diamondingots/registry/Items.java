@@ -10,12 +10,10 @@ import net.zndrmn.diamondingots.DiamondIngots;
 public class Items {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DiamondIngots.MOD_ID);
 
-    /* TODO Need to fix ItemGroups, leaving this here.
     public static final RegistryObject<Item> DIAMOND_INGOT = ITEMS.register("diamond_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DIAMOND_SHARD = ITEMS.register("diamond_shard", () -> new Item(new Item.Properties()));
-    */
-    public static final RegistryObject<Item> DIAMOND_INGOT = ITEMS.register("diamond_ingot", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIAMOND_SHARD = ITEMS.register("diamond_shard", () -> new Item(new Item.Properties()));
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register((eventBus));
